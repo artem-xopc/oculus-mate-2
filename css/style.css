@@ -188,11 +188,26 @@ button{
   color: #070707;
 }
 
+.tabs__content{
+  position: relative;
+  min-height: 300px;
+}
+
 .tabs__content-item{
   display: grid;
   grid-template-columns: auto 280px;
   grid-template-rows: auto 150px;
   gap: 40px;
+  opacity: 0;
+  position: absolute;
+}
+.tabs__content-item--active{
+  opacity: 1;
+}
+
+.tabs__content-image{
+  grid-row: 1/-1;
+  align-self: stretch;
 }
 
 .tabs__content-box h3{
