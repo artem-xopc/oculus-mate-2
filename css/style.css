@@ -420,3 +420,67 @@ button {
   right: 575px;
   bottom: 80px;
 }
+
+/* Стилизация сукции accessories */
+
+.accessories__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 700px) {
+  .accessories__items {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.accessories_item {
+  border: 1px solid #bc10d8;
+  padding: 20px 20px 20px;
+  margin-right: 1px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: 280px, 60px, 36px, 18px, 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.accessories__item-img {
+  margin-bottom: 10px;
+}
+.accessories__item-title {
+  margin-bottom: 10px;
+  min-height: 56px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.accessories__item-text {
+  margin-bottom: 42px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.accessories__item-prise {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.accessories__item-btn {
+  max-height: 30px;
+  padding: 6px 81px;
+  border: 2px solid #bc10d8;
+  background: var(--gradient, linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+.social_wrapper {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
